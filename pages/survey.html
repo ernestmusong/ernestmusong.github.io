@@ -1,0 +1,267 @@
+<!DOCTYPE html >
+
+<html>
+<head>
+	<title>My Survey Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="../portfolio.css">
+</head>
+	<style>
+
+		*{
+
+			box-sizing: border-box;
+		}
+
+
+		body{
+			background-color: rgb(186,212,255);
+			/*text-align: center;*/
+			 display: block;
+			}
+
+			 #navbar {
+        top: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 40px;
+        background-color: #333333;
+        padding-left: 50px;
+      }
+
+      #navbar a {
+        text-decoration: none;
+        color: white;
+      }
+
+		
+		  #title{
+			text-align: center;
+		}
+
+		@media (max-width: 450px) {
+			 #title{
+			text-align: center;
+			margin: 0 auto;
+		}
+		}
+
+		#description{
+			text-align: center;
+		}
+
+		@media (max-width: 450px) {
+			#description{
+				text-align: center;
+				font-size: 30px;
+			}
+		}
+
+	@media (width: 768px) {
+		#description{
+			font-size: 30px;
+		}
+	}
+
+	@media (width: 1024px) {
+		#description{
+			font-size: 30px;
+		}
+	}
+
+		 
+ #survey-form{
+      background-color: rgba(23, 168, 122, 0.91);
+      width: 600px;
+	  margin: 0 auto;
+      padding: 50px;
+      border-radius: 5px;
+       }
+
+@media (width: 1024px) {
+	#survey-form{
+		height: 100%;
+	}
+}
+
+#age, #number, #email, #dropdown, #subject, #name{
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	resize: vertical;
+}
+
+#submit{
+	width: 100%;
+	background-color: black;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 12px 20px; 
+	margin-top: 20px;
+	resize: vertical;
+	font-size: 25px;
+
+
+}
+
+#submit:hover{
+	background-color: green;
+}
+
+.labels{
+	 
+	font-size: 20px;
+	line-height: 40px;
+	
+}
+
+@media (width: 768px) {
+	.labels{
+		font-size: 30px;
+	}
+}
+
+@media (width: 1024px) {
+	.labels{
+		font-size: 30px;
+	}
+}
+
+ </style>
+</head>
+<body>
+<nav id="navbar">
+	<a href="../portfolio.html" target="blank">Home</a>
+</nav>
+<br />
+	<H1 id="title">My Survey Form</H1>
+	<P id="description">Thank you for helping me improve on the platform</P>
+	
+	
+		
+		<form id="survey-form">
+			
+				<label id="name-label" for="name" class="labels">
+				Name
+			</label><br>
+			<input type="text" name="text" required id="name" placeholder="Enter Your Name"><br>
+			   
+               <label id="email-label" for="email" class="labels">Email
+			</label><br>
+		<input type="email" name="email" required id="email" placeholder="Enter Your Email "><br>
+				                                                                   
+
+		<label id="number-label" for="age" class="labels">
+			Age
+		</label><br>
+		<input type="number" min="18" max="50" name="number" required id="age" placeholder="Enter Your Age"><br>
+
+		<label for="country" class="labels" id="country-label">
+			Country
+		</label><br>
+		<select id="dropdown" name="Country" required>
+			<option value="" disabled selected>select country</option>
+				<option value="country">Cameroon</option>
+				<option value="country">Nigeria</option>
+				<option value="country">Senegal</option>
+				<option value="country">Ghana</option>
+			</select><br>
+	<label class="labels" for="city">
+			Choose Your Favourite City
+		</label><br>
+		<input class="inputs" type="radio" name="city">Yaounde<br>
+			<input  class="inputs"  type="radio" name="city">Lagos<br>
+			<input  class="inputs"  type="radio" name="city">Dakar<br>
+			<input  class="inputs"  type="radio" name="city">Acra<br>
+
+		<label class="labels">
+		 What Can Be The Cause Of Under-development In These Countries?
+            </label><br>
+			<input type="checkbox" name="" value="corruption">Corruption<br>
+				<input  class="inputs"  type="checkbox" name="poverty" value="poverty">Poverty<br>
+				<input  class="inputs"  type="checkbox" name="unemployment" value="Unemployment">unemployment<br>
+				<input  class="inputs"  type="checkbox" name="tribalism" value="Tribalism">tribalism<br>
+				<input  class="inputs"  type="checkbox" name="Illiteracy" value="Illiteracy">illiteracy<br>
+			
+				<label class="labels" for="subject">
+				Comments and suggestions
+			</label><br>
+		        <textarea id="subject" name="subject" placeholder="write your comments here..."></textarea>
+			<button id="submit" type="submit">Submit
+			</button>
+		</form>
+		<footer id="footer" class="bg-dark ">
+			<div class="container">
+				<div class="row mb-40">
+					<div class="col-6 text-center" style="padding: 5px;">
+						<p class="text-lowercase text-center mb-0 text-white">
+							<i class="fa fa-envelope text-white mr-4">ernestakeh@gmail.com</i>
+						</p>
+					</div>
+		
+					<div class="col-6 text-center" style="padding: 5px;">
+						<p class=" text-lowercase text-center mb-0 text-white">
+							<strong>phone:</strong><Span>+237668107827</Span>
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col" id="footer-col">
+						<a href="#" class="btn">
+							<i class="fa fa-facebook fa-2x text-primary m2"></i>
+						</a>
+						<a href="https://twitter.com/AkehErnest" class="btn">
+							<i class="fa fa-twitter fa-2x text-primary m2"></i>
+						</a>
+						<a href="https://github.com/Ernest-M" class="btn">
+							<i class="fa fa-github text-white fa-2x m2"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<br><br>
+			<div class="row">
+				<div class="col text-center">
+					<p class="mt-2 text-capitalize text-white">
+						&copyCopy Rights 2020: All Rights Reserved
+					</p>
+				</div>
+			</div>
+		</footer>
+		<div class="bottom-link">
+			<a href="#header">
+				<i class="fa fa-angle-up text-center text-white" style="font-size:36px"></i>
+			</a>
+		</div>
+		<script src="portfolio.js"></script>
+</body>
+</html>
+
+	
+					
+				
+				
+			
+
+
+     
+		
+				
+			
+			
+		
+	
+
+

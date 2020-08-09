@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Technical Documentation Form</title>
+	<meta charset="utf-8">
+	<meta  name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="../portfolio.css">
+
+<style>
+html {
+	scroll-behavior: smooth;
+}
+	 *{
+     	box-sizing: border-box;
+		 }
+		 
+         body{
+             margin: 0px;
+			 padding: 0;
+	        background-color: lightyellow;
+			font-family: "Poppins" sans-serif;
+	        }
+ #nav {
+        top: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 40px;
+        background-color: #333333;
+        padding-left: 50px;
+      }
+
+      #nav a {
+        text-decoration: none;
+        color: white;
+      }
+	       
+
+         
+          #navbar div{
+         	 height: 100vh;
+         	position: fixed;
+         	background-color: #000000;  
+            top: 40px;   
+         	 padding-top: 20px; 
+			 width: 30vw; 
+			 overflow: scroll;
+			
+         	
+			}
+			
+			 #navbar div>h3 {
+          	position: fixed;
+			  text-align: center;
+			  color:yellow;
+			  background-color: #000000;
+		  }
+		  
+		   @media (max-width: 768px) {
+
+            	#navbar div>h3 {
+					font-size: 12px;
+				}
+            }
+
+            .font-size{ list-style-type: none;
+			 
+		  }
+
+		  
+		 
+         .nav-link{
+         	text-decoration: none;
+			 font-size: 20px;
+			}
+
+ @media (max-width: 768px) {
+            	.nav-link{
+
+				 font-size: 12px;
+				 /* text-align: center; */
+            	}
+			}
+			
+         #main-doc{
+			 margin-left: 30vw;
+			
+         	    
+         	}
+
+         	 
+
+         	.main-section{
+              margin: 10px;
+         	}
+
+         	@media (max-width: 768px) {
+         		.main-section{
+         			width: 100%;
+         			margin: 0 auto;
+         			padding: 3px;
+         		}
+         	}
+
+         	.illustration-div{
+         		background-color: grey;
+         		padding: 10px;
+         		margin-left: 20px;
+         		margin-right: 20px;
+         		border-radius: 5px;
+         	}
+
+         	.font-size{
+         		font-size: 18px;
+         	}
+
+         	.bold{
+         		font-weight: bold;
+         		margin-left: 20px;
+         	}
+          
+         </style>
+</head>
+<body>
+	<div id="nav">
+		<a href="../portfolio.html" target="blank">Home</a>
+	</div>
+	<br><br>
+    <nav id="navbar">
+		<div>
+			<h3>CSS DOCUMENTATION</h3>
+ 		<ul class="ul">
+ 	   <li class="nav-link"><a class="nav-link" href="#CSS_Introduction">CSS Introduction</a></li><hr>
+ 		<li class="nav-link"><a class="nav-link" href="#CSS_Syntax">CSS Syntax</a></li><hr>
+ 		<li class="nav-link"><a class="nav-link" href="#CSS_Selectors">CSS Selectors</a></li><hr>
+ 		<li class="nav-link"><a class="nav-link" href="#CSS_Colors">CSS Colors</a></li><hr>
+ 		<li class="nav-link"><a class="nav-link" href="#CSS_Backgrounds">CSS Backgrounds</a></li><hr>
+ 	    <li class="nav-link"><a class="nav-link" href="#CSS_Borders">CSS Borders</a></li><hr>
+ 		<li class="nav-link"><a class="nav-link" href="#CSS_Margins">CSS Margins</a></li><hr>
+ 		<li class="nav-link"><a  class="nav-link" href="#CSS_Padding">CSS Padding</a></li><hr>
+ 		<li class="nav-link"><a  class="nav-link" href="#CSS_Outline">CSS Outline</a></li><hr>
+ 		<li class="nav-link"><a  class="nav-link" href="#CSS_Text">CSS Text</a></li><hr>
+ 		<li class="nav-link"><a  class="nav-link" href="#CSS_Fonts">CSS Fonts</a></li><hr>
+ 		<li class="nav-link"><a  class="nav-link" href="#CSS_Icons">CSS Icons</a></li><hr>
+ 		<li class="nav-link"><a  class="nav-link" href="#CSS_Links">CSS Links</a></li><hr>
+ 		<li class="nav-link"><a  class="nav-link" href="#CSS_Tables">CSS Tables</a></li><hr>
+ 		<li class="nav-link"><a class="nav-link" href="#Reference">Reference</a></li>
+	 </ul>
+	</div>
+ </nav>
+         
+ 	
+   <main id="main-doc">
+ 	<section id="CSS_Introduction" class="main-section">
+ 		<h1>CSS Introduction</h1>
+ 		<ul>
+ 			<li  class="font-size">CSS stands for Cascading Style Sheets</li>
+ 			<li  class="font-size">CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+ 			<li  class="font-size">CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+ 			<li  class="font-size">External stylesheets are stored in CSS files
+           </li>
+ 		</ul>
+ 	</section>
+ 	<section id="CSS_Syntax" class="main-section">
+ 		<h1>CSS Syntax</h1>
+ 		<p class="font-size">A CSS rule-set consists of a selector and a declaration block:</p>
+ 		<p class="font-size">The selector points to the HTML element you want to style.</p>
+ 		<p class="font-size">The declaration block contains one or more declarations separated by semicolons.</p>
+ 		<p class="font-size">Each declaration includes a CSS property name and a value, separated by a colon.</p>
+ 		<p class="font-size">A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces. </p>
+ 		<h2 class="bold">Example</h2>
+ 		<p class="bold">In the example below all &lt;p&gt; elements will be center-aligned, with a red text color</p>
+ 		<div class="illustration-div">
+ 			<p class="font-size">
+ 			p{<br>
+ 			color: red;<br>
+ 			text-align: center;<br>
+ 		}</p>
+ 		</div>
+ 		
+ 	</section>
+ 	<section id="CSS_Selectors" class="main-section">
+ 		<h1>CSS Selectors</h1>
+ 		<p class="font-size">CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+ 		<p  class="font-size">We can divide CSS selectors into five categories:</p>
+ 		<ul>
+ 			<li class="font-size">Simple selectors (select elements based on name, id, class)</li>
+ 			<li class="font-size">Combinator selectors (select elements based on a specific relationship between them)</li>
+ 			<li class="font-size">Pseudo-class selectors (select elements based on a certain state)</li>
+ 			<li class="font-size">Pseudo-elements selectors (select and style a part of an element)</li>
+ 			<li class="font-size">Attribute selectors (select elements based on an attribute or attribute value)</li>
+ 		</ul>
+ 		<h2 class="bold">Example</h2>
+ 		<p class="bold">In the example below all &lt;p&gt; elements will be center-aligned, with a red text color</p>
+ 		<div class="illustration-div">
+ 			<p class="font-size">p{<br>
+ 			color: red;<br>
+ 			text-align: center;<br>
+ 		}</p>
+ 		</div>
+ 			</section>
+ 	<section id="CSS_Colors" class="main-section">
+ 		<h1>CSS Colors</h1>
+ 		<p class="font-size">Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p>
+ 		<p class="font-size">In CSS, a color can be specified by using a color name such as: Tomato, Orange, DodgerBlue, MediumSeaGreen, Gray, SlateBlue, Violet and LightGray. Or RGB values, HEX values, HSL values values,  RGBA values, and HSLA values: E.g for color name "Tomato": </p>
+ 		<p class="font-size">In CSS, a color can be specified by using a color name such as: Tomato, Orange, DodgerBlue, MediumSeaGreen, Gray, SlateBlue, Violet and LightGray. Or RGB values, HEX values, HSL values values,  RGBA values, and HSLA values: E.g for color name "Tomato": rgb(255, 99, 71), #ff6347, sl(9, 100%, 64%)</p>
+ 		<h2 class="bold">Example</h2>
+ 		<div class="illustration-div">
+ 			<p class="font-size">
+ 			 &lt;h1 style="background-color:rgb(255, 99, 71);"&gt;...&lt;/h1&gt;<br>
+ 			 &lt;h1 style="background-color:#ff6347;"&gt;...&lt;/h1&gt;<br>
+ 			 &lt;h1 style="background-color:hsl(9, 100%, 64%);"&gt;...&lt;/h1&gt;
+ 			</p>
+ 		</div>
+
+ 	</section>
+ 	
+      <section id="CSS_Backgrounds" class="main-section">
+ 		<h1>CSS Backgrounds</h1>
+ 		<p class="font-size">The CSS background properties are used to define the background effects for elements</p>
+ 		<P class="font-size">CSS background properties:</P>
+ 		<ul>
+ 			<li class="font-size">background-color</li>
+ 			<li class="font-size">background-image</li>
+ 			<li class="font-size">background-repeat</li>
+ 			<li class="font-size">background-attachment</li>
+ 			<li class="font-size">background-position</li>
+ 		</ul>
+ 		<h2 class="bold">Example</h2>
+ 		<p class="bold">The background color of a page is set like this:</p>
+ 		<div class="illustration-div">
+ 			<p class="font-size">
+ 			body {<br>
+ 			 background-color: lightblue;<br>
+ 			 }</p>
+ 		</div>
+ 	</section>
+ 	<section id="CSS_Borders" class="main-section">
+ 		<h1>CSS Borders</h1>
+        <p class="font-size">The CSS border properties allow you to specify the style, width, and color of an element's border.</p>
+ 		<p class="bold">CSS Border Style</p>
+ 		<p class="font-size">The border-style property specifies what kind of border to display.</p>
+ 		<p class="font-size">The following values are allowed:</p>
+ 		<ul>
+ 			<li class="font-size">dotted - Defines a dotted border</li>
+ 			<li class="font-size">dashed - Defines a dashed border</li>
+ 			<li class="font-size">solid - Defines a solid border</li>
+ 			<li class="font-size">double - Defines a double border</li>
+ 			<li class="font-size">groove - Defines a 3D grooved border. The effect depends on the border-color value</li>
+ 			<li class="font-size">ridge - Defines a 3D ridged border. The effect depends on the border-color value</li>
+ 			<li class="font-size">inset - Defines a 3D inset border. The effect depends on the border-color value</li>
+ 			<li class="font-size">outset - Defines a 3D outset border. The effect depends on the border-color value</li>
+ 			<li class="font-size">none - Defines no border</li>
+ 			<li class="font-size">hidden - Defines a hidden border</li>
+ 		</ul>
+ 		<h2 class="bold">Example</h2>
+ 		<p class="bold">Demonstration of the different border styles:</p>
+ 		<div class="illustration-div" style="height: auto;">
+ 			<p >
+p.dotted {border-style: dotted:}
+p.dashed {border-style: dashed;}<br>
+p.solid {border-style: solid;}<br>
+p.double {border-style: double;}<br>
+p.groove {border-style: groove;}<br>
+p.ridge {border-style: ridge;}<br>
+p.inset {border-style: inset;}<br>
+p.outset {border-style: outset;}<br>
+p.none {border-style: none;}</li><br>
+p.hidden {border-style: hidden;}<br>
+p.mix {border-style: dotted dashed solid double;}
+</p>
+ 		</div>
+ 	</section>
+ 	<section id="CSS_Margins" class="main-section">
+ 		<h1>CSS Margins</h1>
+ 		<p class="font-size">The CSS margin properties are used to create space around elements, outside of any defined borders.</p>
+ 		<p class="font-size">With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).
+ 			<P class="font-size">CSS has properties for specifying the margin for each side of an element:</P>
+ 			<ul>
+ 				<li class="font-size">margin-top</li>
+ 				<li class="font-size">margin-right</li>
+ 				<li class="font-size">margin-bottom</li>
+ 				<li class="font-size">margin-left</li>
+ 			</ul>
+ 			<h2 class="bold">Example</h2>
+ 			<p class="bold">Set different margins for all four sides of a &lt;p&gt; element:</p>
+ 			<div class="illustration-div">
+ 				<p class="font-size">
+               p {<br>
+  margin-top: 100px;<br>
+  margin-bottom: 100px;<br>
+  margin-right: 150px;<br>
+  margin-left: 80px;<br>
+}</p>
+</div>
+  </section>
+  <section id="CSS_Padding"class="main-section">
+  	<h1>CSS Padding</h1>
+  	<P>>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</P>
+  </section>
+  <section id="CSS_Outline" class="main-section">
+  	<h1>CSS Outline</h1>
+  	<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</P>
+  </section>
+  <section id="CSS_Text" class="main-section">
+  	<h1>CSS Text</h1>
+  	<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</P>
+  </section>
+
+  <section id="CSS_Fonts" class="main-section">
+  	<h1>CSS Fonts</h1>
+  	<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</P>
+  </section>
+  <section id="CSS_Icons" class="main-section">
+  	<h1>CSS Icons</h1>
+  	<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</P>
+  </section>
+  <section id="CSS_Links" class="main-section">
+  	<h1>CSS Links</h1>
+  	<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</P>
+  </section>
+  <section id="CSS_Tables" class="main-section">
+  	<h1>CSS Tables</h1>
+  	<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</P>
+  </section>
+
+<section id="Reference" class="main-section">
+	<h2>Reference</h2>
+	<ul>
+		<li>All the documentation in this page is taken from<a href="https://www.w3schools.com">w3schools</a></li>
+	</ul>
+</section>
+  </main>
+ 
+ 	 </body>
+</html>
+
+		

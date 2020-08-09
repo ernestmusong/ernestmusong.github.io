@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">    
+
+<head>
+    <title>My Porfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="portfolio.css" />
+
+</head>
+
+<body>            
+    <div id="header" class="header bg-dark" >
+        <button class="sidebar-toggle toggle-btn">
+            <i class="fa fa-bars text-white" id="toggler"></i>
+        </button>
+    </div>
+    <aside class="sidebar show-sidebar bg-dark" id="navbar">
+        <div class="sidebar-header">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSxUD1_ZxaSXZ8CZqly1QKq0WdhOh2dDQ22rWkNhn3jfQ&usqp=CAU&ec=45673586"
+                alt="logo" style="width: 40px; height: 40px;">
+            <button class="close-btn bg-dark" style="border: none;">
+                <i class="fa fa-times text-white" id="close"></i>
+            </button>
+        </div>
+        <ul class="links">
+            <li><a href="#" class="scroll-link">Home</a></li>
+            <li><a href="about.html"target='blank'>About</a></li>
+            <li><a href="#projects-section">Work</a></li>
+            <li><a href="#footer">Contact</a></li>
+       </ul>
+    </aside><br><br><br>
+    <div class="hero-image" id="hero-image">
+        <div class="hero-text">
+            <div class="text1">HELLO I AM ERNEST</div>
+            <div class='text2'>a front-end developer</div>
+            <div class=" text-capitalize text3"><p style="color: gold;">i am familiar with git, github and wordpress</p></div>
+        </div>
+    </div>
+          
+    <br><br><br><br>   
+<section id="projects-section">
+<div class="container text-center">
+    <h3 class="text-dark bg-light text-uppercase">these are some of my projects</h3>
+    <div class=" underline bg-dark" style="height: 8px;"></div>
+</div>
+<br><br><br><br>
+</div>
+<div class="container" id="projects">
+    <div class="row project text-center">
+        <div class="col-lg-6 col-xl-4">
+            <a class="link" href="./pages/calculator.html" target="blank">  
+              <img class="cards"
+                src= '..\images\JS-calculator.png'
+                alt="Card image">
+              <div class="card-title">
+                <p>JAVASCRIPT CALCULATOR</p>
+            </div>
+           </a>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <a class="link" href="./pages/pomo.html" target="blank">  
+              <img class="cards"
+                src='..\images\pomo.png'
+                alt="Card image">
+             <div class="card-title">
+               <p>POMODORO CLOCK</p>
+            </div>
+           </a>
+        </div>
+       <div class="col-lg-6 col-xl-4">
+            <a class="link" href="./pages/survey.html" target="blank">  
+              <img class="cards"
+                src= '..\images\survey-form.png'
+                alt="Card image">
+              <div class="card-title">
+                <p>SURVEY FORM</p>
+             </div>
+            </a>
+       </div>
+      <div class="col-lg-6 col-xl-4">
+            <a class="link" href="./pages/random.html" target="blank"> 
+              <img class="cards"
+                src='..\images\random.png'
+                alt="Card image">
+              <div class="card-title">
+                <p>RANDOM QUOTE MACHINE</p>
+             </div>
+            </a>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <a class="link" href= "./pages/mark.html" target="blank">
+              <img class="cards"
+                src='..\images\markdown.png'
+                alt="Card image">
+              <div class="card-title">
+                <p>MARKDOWN PREVEIWER</p>
+             </div>
+            </a>
+        </div>
+        <div class="col-lg-6 col-xl-4">
+            <a class="link" href="./pages/technical.html" target="blank">
+              <img class="cards" 
+                src='..\images\technical.png'
+                alt="Card image">
+              <div class="card-title">
+                <p>TECHNICAL DOCUMENTATION</p>
+             </div>
+            </a>
+        </div>  
+    </div>
+</div>  
+</section>    
+ 
+<div class="btn-one">
+    <a href=""><button type="button" class="btn btn-success">show all</button></a>
+</div>
+</section>
+<br><br><br><br>   
+<div style=" margin: 0 auto;" id="button-div">
+            <button class="btn btn-danger" id="change-color">Body Color</button>
+            <button class="btn btn-success" id="reset-color">Reset</button>
+        </div>
+     <!---javascript-->
+    <script src="portfolio.js">
+
+    </script>
+
+    <footer id="footer" class="bg-dark ">
+        <div class="container">
+            <div class="row mb-40">
+                <div class="col-6 text-center" style="padding: 5px;">
+                    <p class="text-lowercase text-center mb-0 text-white">
+                        <i class="fa fa-envelope text-danger mr-2"></i><span>ernestakeh@gmail.com</span>
+                    </p>
+                </div>
+    
+                <div class="col-6 text-center" style="padding: 5px;">
+                    <p class=" text-lowercase text-center mb-0 text-white">
+                        <i class="fa fa-phone text-success mr-2"></i> <Span>+237668107827</Span>
+                    </p>
+                </div>
+        </div>
+         <div class="row">
+                <div class="col" id="footer-col">
+                    <a href="https://web.facebook.com/?_rdc=1&_rdr" class="btn">
+                        <i class="fa fa-facebook fa-2x text-primary m2"></i>
+                    </a>
+                   <a href="https://twitter.com/AkehErnest" class="btn">
+                        <i class="fa fa-twitter fa-2x text-primary m2"></i>
+                    </a>
+                    <a href="https://github.com/Ernest-M" class="btn">
+                        <i class="fa fa-github text-white fa-2x m2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col text-center">
+                <p class="mt-2 text-capitalize text-white">
+                    &copyCopy Rights 2020: All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom-link">
+        <a href="#hero-image">
+            <i class="fa fa-angle-up text-center text-white" style="font-size:36px"></i>
+        </a>
+    </div>
+</body>
+
+</html>
+ 
