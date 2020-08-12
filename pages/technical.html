@@ -41,6 +41,7 @@ html {
       #nav a {
         text-decoration: none;
         color: white;
+		margin: 20px;
       }
 	       
 
@@ -50,7 +51,7 @@ html {
          	position: fixed;
          	background-color: #000000;  
             top: 40px;   
-         	 padding-top: 20px; 
+         	 /* padding-top: 20px;  */
 			 width: 30vw; 
 			 overflow: scroll;
 			
@@ -62,6 +63,7 @@ html {
 			  text-align: center;
 			  color:yellow;
 			  background-color: #000000;
+			  margin-bottom: 10px;
 		  }
 		  
 		   @media (max-width: 768px) {
@@ -80,6 +82,11 @@ html {
          .nav-link{
          	text-decoration: none;
 			 font-size: 20px;
+			 color: #f0f0f0;
+			}
+
+			.nav-link:hover{
+				color: grey;
 			}
 
  @media (max-width: 768px) {
@@ -92,7 +99,7 @@ html {
 			
          #main-doc{
 			 margin-left: 30vw;
-			
+			margin-top: 20px;
          	    
          	}
 
@@ -131,13 +138,13 @@ html {
 </head>
 <body>
 	<div id="nav">
-		<a href="../portfolio.html" target="blank">Home</a>
+		<a href="../index.html" target="blank">Home</a>
+		<a href="../#projects-section" target="blank">work</a>
 	</div>
-	<br><br>
-    <nav id="navbar">
-		<div>
-			<h3>CSS DOCUMENTATION</h3>
- 		<ul class="ul">
+ <nav id="navbar">
+   <div>
+		<h3>CSS DOCUMENTATION</h3><br><br>
+ 	 <ul class="ul">
  	   <li class="nav-link"><a class="nav-link" href="#CSS_Introduction">CSS Introduction</a></li><hr>
  		<li class="nav-link"><a class="nav-link" href="#CSS_Syntax">CSS Syntax</a></li><hr>
  		<li class="nav-link"><a class="nav-link" href="#CSS_Selectors">CSS Selectors</a></li><hr>
@@ -154,9 +161,9 @@ html {
  		<li class="nav-link"><a  class="nav-link" href="#CSS_Tables">CSS Tables</a></li><hr>
  		<li class="nav-link"><a class="nav-link" href="#Reference">Reference</a></li>
 	 </ul>
-	</div>
+   </div> 
  </nav>
-         
+<br>
  	
    <main id="main-doc">
  	<section id="CSS_Introduction" class="main-section">

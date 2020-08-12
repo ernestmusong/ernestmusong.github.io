@@ -22,6 +22,25 @@
         background-color: orange;
       }
 
+      #navbar {
+        top: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 40px;
+        background-color: #333333;
+        padding-left: 50px;
+      }
+
+      #navbar a {
+        text-decoration: none;
+        color: white;
+        margin: 20px;
+      }
+
       .preview,
       textarea {
         background-color: white;
@@ -32,7 +51,12 @@
     </style>
   </head>
   <body>
-    <div class="container-fluid" id="app"></div>
+    <nav id="navbar">
+      <a href="../index.html" target="blank">Home</a>
+      <a href="../#projects-section" target="blank">work</a>
+    </nav>
+    <br />
+    <div id="app"></div>
     <script type="text/babel" src="mark.js"></script>
   </body>
 </html>
