@@ -47,6 +47,15 @@
         margin: 20px;
       }
 
+      #timer-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        margin: 0 auto;
+        background-color: black;
+      }
+
       .flex {
         display: flex;
         align-items: center;
@@ -54,8 +63,18 @@
         /* background-color: white; */
       }
 
+      @media screen and (max-width: 500px) {
+        .flex,
+        .timer-container {
+          flex-direction: column !important;
+          width: 80vw;
+          justify-content: space-between;
+        }
+      }
+
       .timer-container {
-        margin: -50px 20px 20px;
+        display: flex;
+        flex-direction: column;
       }
 
       .timer-container h2 {
@@ -93,6 +112,11 @@
       }
       .clock-container span {
         font-size: 50px;
+      }
+      @media screen and (max-width: 676px) {
+        .clock-container {
+          width: 80vw;
+        }
       }
 
       .play-pause {

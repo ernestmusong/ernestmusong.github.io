@@ -21,7 +21,7 @@
       *::before,
       *::after {
         box-sizing: border-box;
-        font-family: Gothan Rounded, sans-serif;
+        font-family: "Gothan Rounded", sans-serif;
         font-weight: normal;
       }
 
@@ -50,13 +50,29 @@
         margin: 20px;
       }
 
+      .calculator-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0 auto;
+        width: 100%;
+        position: fixed;
+      }
+
       .calculator-grid {
         display: grid;
         justify-content: center;
         align-content: center;
-        min-height: 100vh;
-        grid-template-columns: repeat(4, 100px);
-        grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+        height: 80%;
+        grid-template-columns: repeat(4, 80px);
+        grid-template-rows: minmax(120px, auto) repeat(5, 80px);
+      }
+      @media screen and (max-width: 330px) {
+        .calculator-grid {
+          grid-template-columns: repeat(4, 60px);
+          grid-template-rows: minmax(120px, auto) repeat(5, 60px);
+        }
       }
 
       .calculator-grid > button {
@@ -104,29 +120,31 @@
       <a href="../#projects-section" target="blank">work</a>
     </nav>
     <br />
-    <div class="calculator-grid">
-      <div class="output">
-        <div data-previous-operand class="previous-operand"></div>
-        <div data-current-operand class="current-operand"></div>
+    <div class="calculator-container">
+      <div class="calculator-grid">
+        <div class="output">
+          <div data-previous-operand class="previous-operand"></div>
+          <div data-current-operand class="current-operand"></div>
+        </div>
+        <button data-all-clear class="span-two">AC</button>
+        <button data-delete>DEL</button>
+        <button data-operation>/</button>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operation>*</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operation>+</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-operation>-</button>
+        <button data-number>.</button>
+        <button data-number>0</button>
+        <button data-equals class="span-two">=</button>
       </div>
-      <button data-all-clear class="span-two">AC</button>
-      <button data-delete>DEL</button>
-      <button data-operation>/</button>
-      <button data-number>1</button>
-      <button data-number>2</button>
-      <button data-number>3</button>
-      <button data-operation>*</button>
-      <button data-number>4</button>
-      <button data-number>5</button>
-      <button data-number>6</button>
-      <button data-operation>+</button>
-      <button data-number>7</button>
-      <button data-number>8</button>
-      <button data-number>9</button>
-      <button data-operation>-</button>
-      <button data-number>.</button>
-      <button data-number>0</button>
-      <button data-equals class="span-two">=</button>
     </div>
 
     <script defer>
