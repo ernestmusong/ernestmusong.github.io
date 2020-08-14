@@ -41,7 +41,7 @@ html {
       #nav a {
         text-decoration: none;
         color: white;
-		margin: 20px;
+		margin: 20px; 
       }
 	       
 
@@ -57,6 +57,15 @@ html {
 			
          	
 			}
+
+			  @media screen and (max-width: 676px) {
+
+            	#navbar div {
+					height: 150px;
+					width: 100vw;
+				
+				}
+            }
 			
 			 #navbar div>h5 {
           	position: fixed;
@@ -66,18 +75,21 @@ html {
 			  margin-bottom: 10px;
 		  }
 		  
-		   @media (max-width: 768px) {
+		   @media screen and (max-width: 676px) {
 
             	#navbar div>h5 {
 					font-size: 12px;
 				}
             }
 
+			
             .font-size{ list-style-type: none;
 			 
 		  }
 
-		  
+		  ul {
+			  list-style-type: none;
+		  }
 		 
          .nav-link{
          	text-decoration: none;
@@ -103,7 +115,15 @@ html {
          	    
          	}
 
-         	 
+         	 	@media screen and (max-width: 676px) {
+         		#main-doc {
+         			width: 100vw;
+         			margin: 0 auto;
+         			padding: 3px;
+					 margin-top: 150px;
+         		}
+         	}
+
 
          	.main-section{
               margin: 10px;
@@ -144,22 +164,22 @@ html {
  <nav id="navbar">
    <div>
 		<h5>CSS DOCUMENTATION</h5><br><br>
- 	 <ul class="ul">
- 	   <li class="nav-link"><a class="nav-link" href="#CSS_Introduction">CSS Introduction</a></li><hr>
- 		<li class="nav-link"><a class="nav-link" href="#CSS_Syntax">CSS Syntax</a></li><hr>
- 		<li class="nav-link"><a class="nav-link" href="#CSS_Selectors">CSS Selectors</a></li><hr>
- 		<li class="nav-link"><a class="nav-link" href="#CSS_Colors">CSS Colors</a></li><hr>
- 		<li class="nav-link"><a class="nav-link" href="#CSS_Backgrounds">CSS Backgrounds</a></li><hr>
- 	    <li class="nav-link"><a class="nav-link" href="#CSS_Borders">CSS Borders</a></li><hr>
- 		<li class="nav-link"><a class="nav-link" href="#CSS_Margins">CSS Margins</a></li><hr>
- 		<li class="nav-link"><a  class="nav-link" href="#CSS_Padding">CSS Padding</a></li><hr>
- 		<li class="nav-link"><a  class="nav-link" href="#CSS_Outline">CSS Outline</a></li><hr>
- 		<li class="nav-link"><a  class="nav-link" href="#CSS_Text">CSS Text</a></li><hr>
- 		<li class="nav-link"><a  class="nav-link" href="#CSS_Fonts">CSS Fonts</a></li><hr>
- 		<li class="nav-link"><a  class="nav-link" href="#CSS_Icons">CSS Icons</a></li><hr>
- 		<li class="nav-link"><a  class="nav-link" href="#CSS_Links">CSS Links</a></li><hr>
- 		<li class="nav-link"><a  class="nav-link" href="#CSS_Tables">CSS Tables</a></li><hr>
- 		<li class="nav-link"><a class="nav-link" href="#Reference">Reference</a></li>
+ 	 <ul>
+ 	   <li><a class="nav-link" href="#CSS_Introduction">CSS Introduction</a></li>
+ 		<li><a class="nav-link" href="#CSS_Syntax">CSS Syntax</a></li>
+ 		<li><a class="nav-link" href="#CSS_Selectors">CSS Selectors</a></li>
+ 		<li><a class="nav-link" href="#CSS_Colors">CSS Colors</a></li>
+ 		<li><a class="nav-link" href="#CSS_Backgrounds">CSS Backgrounds</a></li>
+ 	    <li><a class="nav-link" href="#CSS_Borders">CSS Borders</a></li>
+ 		<li><a class="nav-link" href="#CSS_Margins">CSS Margins</a></li>
+ 		<li><a  class="nav-link" href="#CSS_Padding">CSS Padding</a></li>
+ 		<li><a  class="nav-link" href="#CSS_Outline">CSS Outline</a></li>
+ 		<li><a  class="nav-link" href="#CSS_Text">CSS Text</a></li>
+ 		<li><a  class="nav-link" href="#CSS_Fonts">CSS Fonts</a></li>
+ 		<li><a  class="nav-link" href="#CSS_Icons">CSS Icons</a></li>
+ 		<li><a  class="nav-link" href="#CSS_Links">CSS Links</a></li>
+ 		<li><a  class="nav-link" href="#CSS_Tables">CSS Tables</a></li>
+ 		<li><a class="nav-link" href="#Reference">Reference</a></li>
 	 </ul>
    </div> 
  </nav>
